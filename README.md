@@ -14,3 +14,4 @@ Wouldn't mind switching to SCSS and maybe something like bourbon/neat etc to pra
 
 The image is by myself from above Bridgeport, if you got something else let me know. I thought I might overlay some code-layer on it in PS.
 
+Not sure if the relative sizing of h1,h2 with 3vw etc is good, it makes the text scale on window width and   it doesn't spill out of header image. It gets overridden above 960px with em sizing

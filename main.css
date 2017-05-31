@@ -101,7 +101,7 @@ h2 {
 }
 
 
-/* Prevent text from butting against screen sides on smaller devices */
+/* Prevent text from butting against screen sides on smaller */
 
 @media (max-width: 960px) {
     .text-content {
