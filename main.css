@@ -1,110 +1,52 @@
-* {
-    box-sizing: border-box;
-}
-
-html {
-    height: 100%;
-}
-
-body {
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    height: 100%;
-}
-
-.page-wrap {
-    max-width: 960px;
-    margin: 0 auto;
-    height: 100%;
-}
-
-
-/* HEADER STYLING  */
+.container {
+  width: 100%; }
 
 header {
-    position: relative;
-}
+  background: #314764 url(./img/header.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 100px 0;
+  min-height: 458px;
+  z-index: 2; }
 
-header > div {
+.hero {
+  position: relative; }
+  .hero #banner {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: url("./img/header.jpg"); }
+    .hero #banner .inner {
+      padding-top: 33%;
+      /* height/width of image */
+      display: block;
+      height: 0; }
+  .hero .overlay {
     position: absolute;
     top: 0;
-    background: rgba(255, 255, 255, 0.4);
-    display: block;
-    width: 100%;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-}
-
-header > img {
-    display: block;
-    width: 100%;
-}
-
-h1 {
-    text-transform: uppercase;
-    color: black;
-    text-align: center;
-    font-family: 'Expletus Sans', cursive;
-    letter-spacing: 0.1em;
-    /* relative sizing according to viewport width */
-    font-size: 4vw;
-}
-
-h2 {
-    font-size: 3vw;
-    color: black;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-}
-
-
-/* Hardcode size of h1,h2 in bigger screens */
-
-@media (min-width: 960px) {
-    h2 {
-        font-size: 1.3em;
-    }
-    h1 {
-        font-size: 2em;
-    }
-}
-
-
-/* NAVBAR */
-
-.navbar {
-    background: steelblue;
-}
-
-.navbar ul {
-    list-style: none;
+    bottom: 0;
+    left: 0;
+    right: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 0;
-}
+    align-items: center;
+    color: white; }
+    .hero .overlay .logo {
+      width: 15vw;
+      height: auto; }
+    .hero .overlay h1 {
+      font-family: expletus;
+      font-size: 5vw;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+      margin: 10px 0; }
+    .hero .overlay h3 {
+      font-family: raleway;
+      font-size: 3vw; }
 
-.navbar li {
-    display: inline-block;
-    font-weight: bold;
-    font-size: 1.1em;
-    padding: 5px 20px;
-}
-
-.navbar .active {
-    color: white;
-}
-
-.navbar a {
-    color: inherit;
-    text-decoration: none;
-}
-
-
-/* Prevent text from butting against screen sides on smaller */
-
-@media (max-width: 960px) {
-    .text-content {
-        margin: 10px 20px;
-    }
-}
+/*# sourceMappingURL=main.css.map */
