@@ -1,9 +1,9 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: raleway, sans-serif; }
 
 .container {
-  width: 100%;
-  font-family: raleway, sans-serif; }
+  width: 100%; }
 
 /* Hero Image etc */
 .hero {
@@ -41,7 +41,7 @@
       width: 5vw;
       height: auto; }
     .hero .overlay h1 {
-      font-family: expletus,serif;
+      font-family: expletus, serif;
       font-size: 4vw;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
       margin: 10px 0; }
@@ -50,51 +50,51 @@
       margin: 5px 0;
       color: white; }
 
-/* MENU */
-.navbar {
-  display: block; }
-  .navbar ul {
-    list-style: none;
-    position: relative;
-    left: 0px;
-    top: -50px;
-    margin: 10px 0;
-    padding: 0px 0px;
-    background: rgba(255, 255, 255, 0.3); }
-    .navbar ul li {
-      display: inline-block;
-      padding: 10px 10px;
-      transition: all 0.2s; }
-      .navbar ul li:hover {
-        color: white;
-        background: rgba(128, 128, 128, 0.3);
-        border-radius: 20px; }
-      .navbar ul li a {
-        padding: 10px 20px;
-        text-decoration: none;
-        font-weight: bold;
-        color: inherit;
-        font-size: 20px; }
+#hamburger, #close-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  z-index: 3; }
 
-@media screen and (max-width: 950px) {
-  .navbar {
-    display: none; }
-
-  .navbar.open-menu ul {
-    position: static;
-    margin: 0; }
-    .navbar.open-menu ul li {
-      display: block;
-      width: 50%;
-      text-align: center;
-      margin: 0 auto; }
-
-  .hero #hamburger {
-    display: block;
-    position: absolute;
-    top: 10px;
-    left: 10px;
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px; }
+  .sidenav ul {
+    list-style: none; }
+  .sidenav li a {
     color: white;
-    z-index: 10; } }
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s; }
+
+.sidenav-open {
+  width: 250px; }
+
+.move-right {
+  margin-left: 250px; }
+
+.overlay-active {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2; }
+
+#main {
+  transition: margin-left .5s; }
 
 /*# sourceMappingURL=main.css.map */

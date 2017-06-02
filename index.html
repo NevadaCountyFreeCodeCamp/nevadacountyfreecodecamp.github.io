@@ -7,7 +7,6 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Expletus+Sans|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -15,11 +14,24 @@
 </head>
 
 <body>
-    <div class="container">
+    <div id="hamburger" onclick="openNav()">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </div>
+    <div class="sidenav">
+        <ul>
+            <i id="close-btn" class="fa fa-times fa-2x" onclick="closeNav()"></i>
+
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#">Meetings</a></li>
+            <li><a href="#">Talks</a></li>
+            <li><a href="#">Members</a></li>
+        </ul>
+    </div>
+    <div id="main" class="container">
+        <div id="overlay">
+            
+        </div>
         <div class="hero">
-            <div id="hamburger">
-                <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-            </div>
             <span id="banner" role="img">
                 <span class="inner">
                 </span>
@@ -29,14 +41,6 @@
                 <h1>freeCodeCamp Nevada County</h1>
                 <h3><i class="fa fa-code"></i> coding in the Sierra foothills <i class="fa fa-code"></i></h3>
             </div>
-        </div>
-        <div class="navbar">
-            <ul>
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="#">Meetings</a></li>
-                <li><a href="#">Talks</a></li>
-                <li><a href="#">Members</a></li>
-            </ul>
         </div>
         <div class="text-content">
             <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>

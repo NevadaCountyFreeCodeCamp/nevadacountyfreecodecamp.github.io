@@ -1,23 +1,20 @@
-$(document).ready(function() {
-  $('#hamburger').click(function() {
-    if ($('.navbar').hasClass('open-menu')) {
-      // This is meant to prevent the <ul> from dissapearing at oncce on click, but doesn't work
-      // Chaining doesn't work not setTimeout
-      $('.navbar').slideUp('slow');
-      setTimeout($('.navbar').removeClass('open-menu'), 1500);
-    } else {
-      $('.navbar').addClass('open-menu').slideDown('slow');
+function openNav() {
+  $('.sidenav').addClass('sidenav-open');
+  $('#main').addClass('move-right');
+  $('#hamburger').hide();
+  document.onkeydown = function(e) {
+    e = e || window.event;
+    console.log(e.keyCode);
+    if (e.keyCode == 27) {
+      closeNav();
     }
+  };
+}
 
-  });
-  $(window).resize(function() {
-    $('.navbar').removeClass('open-menu');
-    var width = $(window).width();
-    if (width > 950) {
-      $('.navbar').css('display', 'block');
-    } else {
-      $('.navbar').css('display', 'none');
-    }
-  });
-});
+function closeNav() {
+  $('.sidenav').removeClass('sidenav-open');
+  $('#main').removeClass('move-right');
+  $('#hamburger').show();
+
+}
 
