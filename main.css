@@ -1,6 +1,9 @@
+* {
+  box-sizing: border-box; }
+
 .container {
   width: 100%;
-  font-family: raleway; }
+  font-family: raleway, sans-serif; }
 
 /* Hero Image etc */
 .hero {
@@ -38,41 +41,53 @@
       width: 5vw;
       height: auto; }
     .hero .overlay h1 {
-      font-family: expletus;
+      font-family: expletus,serif;
       font-size: 4vw;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
       margin: 10px 0; }
+    .hero .overlay h3 {
+      font-size: 2vw;
+      margin: 5px 0;
+      color: white; }
 
 /* MENU */
-.navbar ul {
-  list-style: none;
-  display: flex;
-  position: absolute;
-  left: 10px;
-  bottom: 0px;
-  margin: 10px 0;
-  padding: 0px 20px;
-  background: rgba(255, 255, 255, 0.3); }
-  .navbar ul li {
-    padding: 10px 10px; }
-    .navbar ul li a {
-      padding: 10px 20px;
-      text-decoration: none;
-      font-weight: bold;
-      color: black;
-      font-size: 20px; }
-.navbar h3 {
-  font-family: raleway;
-  font-size: 2vw;
-  margin: 5px 0;
-  position: absolute;
-  right: 10px;
-  bottom: 0px;
-  color: white; }
+.navbar {
+  display: block; }
+  .navbar ul {
+    list-style: none;
+    position: relative;
+    left: 0px;
+    top: -50px;
+    margin: 10px 0;
+    padding: 0px 0px;
+    background: rgba(255, 255, 255, 0.3); }
+    .navbar ul li {
+      display: inline-block;
+      padding: 10px 10px;
+      transition: all 0.2s; }
+      .navbar ul li:hover {
+        color: white;
+        background: rgba(128, 128, 128, 0.3);
+        border-radius: 20px; }
+      .navbar ul li a {
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        color: inherit;
+        font-size: 20px; }
 
 @media screen and (max-width: 950px) {
   .navbar {
     display: none; }
+
+  .navbar.open-menu ul {
+    position: static;
+    margin: 0; }
+    .navbar.open-menu ul li {
+      display: block;
+      width: 50%;
+      text-align: center;
+      margin: 0 auto; }
 
   .hero #hamburger {
     display: block;
@@ -81,10 +96,5 @@
     left: 10px;
     color: white;
     z-index: 10; } }
-.navbar.open-menu {
-  height: 100%; }
-  .navbar.open-menu ul {
-    display: block;
-    color: red; }
 
 /*# sourceMappingURL=main.css.map */

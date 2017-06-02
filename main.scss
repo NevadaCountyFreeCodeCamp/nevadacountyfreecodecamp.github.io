@@ -1,6 +1,11 @@
+@import 'variables';
+
+
+* {box-sizing: border-box;}
+
 .container {
     width: 100%;
-    font-family: raleway;
+    font-family: raleway, sans-serif;
 }
 
 
@@ -49,10 +54,19 @@
             height: auto;
         }
         h1 {
-            font-family: expletus;
+            font-family: expletus,serif;
             font-size: 4vw;
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
             margin: 10px 0;
+        }
+        h3 {
+            // font-family: raleway;
+            font-size: 2vw;
+            margin: 5px 0;
+            // position: absolute;
+            // right: 10px;
+            // bottom: 0px;
+            color: white;
         }
     }
 }
@@ -61,43 +75,52 @@
 /* MENU */
 
 .navbar {
-    // .hamburger {
-    //     display: none;
-    // }
+    display: block;
     ul {
         list-style: none;
-        display: flex;
-        position: absolute;
-        left: 10px;
-        bottom: 0px;
+        position: relative;
+        left: 0px;
+        top: -50px;
         margin: 10px 0;
-        padding: 0px 20px;
-        background: rgba(255, 255, 255, 0.3);
+        padding: 0px 0px;
+        background: $navbar-bg;
         li {
+            display: inline-block;
             padding: 10px 10px;
+            transition: all 0.2s;
+             &:hover {
+                    color: white;
+                    background: darken($navbar-bg,50%) ;
+                    border-radius: 20px;
+                }
             a {
                 padding: 10px 20px;
                 text-decoration: none;
                 font-weight: bold;
-                color: black;
+                color: inherit;
                 font-size: 20px;
             }
         }
-    }
-    h3 {
-        font-family: raleway;
-        font-size: 2vw;
-        margin: 5px 0;
-        position: absolute;
-        right: 10px;
-        bottom: 0px;
-        color: white;
     }
 }
 
 @media screen and (max-width: 950px) {
     .navbar {
         display: none;
+    }
+    .navbar.open-menu {
+        // display: block;
+        ul {
+            position: static;
+            margin: 0;
+            li {
+                display: block;
+                width: 50%;
+                text-align: center;
+                margin: 0 auto;
+               
+            }
+        }
     }
     .hero {
         #hamburger {
@@ -109,20 +132,4 @@
             z-index: 10;
         }
     }
-}
-
-.navbar.open-menu {
-    height: 100%;
-    ul {
-        display: block;
-        color: red;
-    }
-    // display: block;
-    // position: absolute;
-    // bottom: 0px;
-    // left: 50%;
-    // ul {
-    //     display: flex;
-    //     flex-direction: column !important;
-    // }
 }
