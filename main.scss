@@ -6,7 +6,6 @@
 
 .container {
     width: 100%;
-    
 }
 
 
@@ -53,38 +52,44 @@
         .logo {
             width: 5vw;
             height: auto;
+            color: $hero-text;
         }
         h1 {
+            color: $hero-text;
             font-family: expletus, serif;
             font-size: 4vw;
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
             margin: 10px 0;
         }
         h3 {
-            // font-family: raleway;
+            color: $hero-text;
             font-size: 2vw;
             margin: 5px 0;
-            // position: absolute;
-            // right: 10px;
-            // bottom: 0px;
-            color: white;
         }
     }
 }
 
 // Fix menu hamburger on top left
-#hamburger, #close-btn {
+#hamburger,
+#close-btn {
     position: absolute;
     top: 10px;
     left: 10px;
-    color: white;
+    color: $navbar-link-color;
     // overlay is 2, so this makes it stay clickable
     z-index: 3;
+}
+
+#hamburger {
+    color: white;
 }
 
 // Menu styling
 // 
 .sidenav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100%;
     width: 0;
     position: fixed;
@@ -95,9 +100,11 @@
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    // border-right: 5px solid lighten($navbar-link-color,20%);
+    box-shadow: 9px 0px 15px -4px rgba(0, 0, 0, 0.75);
     ul {
         list-style: none;
-        
+        padding-left: 0px;
     }
     li {
         a {
@@ -108,7 +115,20 @@
             color: $navbar-link-color;
             display: block;
             transition: 0.3s;
+            &:hover {
+                letter-spacing: 2px;
+                font-weight: bold;
+                box-shadow: 9px 0px 15px -4px rgba(0, 0, 0, 0.75);
+            }
         }
+    }
+    #social {
+        margin: 30px 20px;
+        display: flex;
+        justify-content: space-around;
+        a {
+            color: $navbar-link-color;
+        }    
     }
 }
 
@@ -121,20 +141,19 @@
     // background-color: rgba(0,0,0,0.5);
 }
 
-.overlay-active {
-    background-color: rgba(0, 0, 0, 0.4);
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-}
-
 #main {
+    height: 100vh;
     transition: margin-left .5s;
-    // position: absolute;
-    // height: 100%;
+    background: $main-bg;
+    color: $main-text;
+    .text-content {
+        margin: 10px 20px;
+    }
+    h2 {
+        font-family: expletus, serif;
+        text-decoration: underline;
+
+    }
 }
 
-@media screen and (max-width: 950px) {}
+

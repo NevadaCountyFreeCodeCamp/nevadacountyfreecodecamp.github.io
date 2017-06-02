@@ -1,4 +1,6 @@
-// $navbar-bg: rgba(0,0,0, 0.3);
-$navbar-bg: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.8) 100%);;
+$hero-text: white;
 
-$navbar-link-color: white;
+$main-bg: white;
+$main-text: black;
+$navbar-bg: linear-gradient(to bottom, $main-bg 0, darken($main-bg,30%) 100%);;
+$navbar-link-color: black;
