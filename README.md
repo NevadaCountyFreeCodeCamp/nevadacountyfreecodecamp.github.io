@@ -5,13 +5,22 @@ The _Official_ Website of the Nevada County Free Code Camp.
 https://nevadacountyfreecodecamp.github.io/
 
 
-# Changes since May 30th
-Included normalize.css for style reset
+## update for #9
 
-Went with Expletus and Raleway fonts as an idea, could be anything else though
+- using normalize.css now to reset browser styles
+- Changed to off-canvas menu on all viewport sizes
+- included jQuery and font-awesome
+- switched to SCSS and started to declare variables for backgrounds colors etc in _variables.scss
+- included social icons at the bottom of the menu
+- jQuery logic is now in /js/ui.js
+- changed favicon to _official_ freeCodeCamp favicon
+- also using a FCC fire icon in the banner image
 
-Wouldn't mind switching to SCSS and maybe something like bourbon/neat etc to practice something like that if other people are into it. Or not, and stick to basic CSS
+Let me know what people think, would be nice to collaborate. Also, I don't know much about robots.txt, 404.html etc, things that one uses if it would actually be deployed
 
-The image is by myself from above Bridgeport, if you got something else let me know. I thought I might overlay some code-layer on it in PS.
-
-Not sure if the relative sizing of h1,h2 with 3vw etc is good, it makes the text scale on window width and   it doesn't spill out of header image. It gets overridden above 960px with em sizing
+### ideas for work
+- add text to index.html, start working on Meetings, Talks, Members etc
+- some animations, maybe with animate.css or velocity,js
+- rotating banner images from Nevada County, should be same ratio though ideally.
+- get some better design ideas, change fonts etc
+- ....
