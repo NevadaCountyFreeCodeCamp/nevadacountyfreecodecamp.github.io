@@ -10,13 +10,14 @@ function openNav() {
       closeNav();
     }
   };
+  // close on click anywhere outside of nav
   $('#main').click(function() {
     closeNav();
   });
 }
 
 function closeNav() {
-  // Do I need to remove the onkeydown event from above?
+  // TODO: Do I need to remove the onkeydown event from above?
   $('.sidenav').removeClass('sidenav-open');
   $('#main').removeClass('move-right');
   $('#hamburger').show();
