@@ -1,0 +1,159 @@
+@import 'variables';
+* {
+    box-sizing: border-box;
+    font-family: raleway, sans-serif;
+}
+
+.container {
+    width: 100%;
+}
+
+
+/* Hero Image etc */
+
+.hero {
+    position: relative;
+    // idea for fully scaling background-img comes from
+    // https://www.smashingmagazine.com/2013/07/simple-responsive-images-with-css-background-images/
+    // TODO: implement <img srcset> and create different sized images 
+    // http://www.responsivebreakpoints.com/
+    #hamburger {
+        display: none;
+    }
+    #banner {
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        font: 0/0 serif;
+        text-shadow: none;
+        color: transparent;
+        background-size: 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-image: url('./img/header-2.jpg');
+        .inner {
+            padding-top: 18.8%;
+            /* height/width of image */
+            display: block;
+            height: 0;
+        }
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        .logo {
+            width: 5vw;
+            height: auto;
+            color: $hero-text;
+        }
+        h1 {
+            color: $hero-text;
+            font-family: expletus, serif;
+            font-size: 4vw;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+            margin: 10px 0;
+        }
+        h3 {
+            color: $hero-text;
+            font-size: 2vw;
+            margin: 5px 0;
+        }
+    }
+}
+
+// Fix menu hamburger on top left
+#hamburger,
+#close-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: $navbar-link-color;
+    // overlay is 2, so this makes it stay clickable
+    z-index: 3;
+}
+
+#hamburger {
+    color: white;
+}
+
+// Menu styling
+// 
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: $navbar-bg;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    // border-right: 5px solid lighten($navbar-link-color,20%);
+    box-shadow: 9px 0px 15px -4px rgba(0, 0, 0, 0.75);
+    ul {
+        list-style: none;
+        padding-left: 0px;
+    }
+    li {
+        a {
+            color: $navbar-link-color;
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: $navbar-link-color;
+            display: block;
+            transition: 0.3s;
+            &:hover {
+                letter-spacing: 2px;
+                font-weight: bold;
+                box-shadow: 9px 0px 15px -4px rgba(0, 0, 0, 0.75);
+            }
+        }
+    }
+    #social {
+        margin: 30px 20px;
+        display: flex;
+        justify-content: space-around;
+        a {
+            color: $navbar-link-color;
+        }    
+    }
+}
+
+.sidenav-open {
+    width: 250px;
+}
+
+.move-right {
+    margin-left: 250px;
+    // background-color: rgba(0,0,0,0.5);
+}
+
+#main {
+    height: 100vh;
+    transition: margin-left .5s;
+    background: $main-bg;
+    color: $main-text;
+    .text-content {
+        margin: 10px 20px;
+    }
+    h2 {
+        font-family: expletus, serif;
+        text-decoration: underline;
+
+    }
+}
+
+

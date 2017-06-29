@@ -1,25 +1,120 @@
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+  font-family: raleway, sans-serif; }
 
-html {
-height: 100%;
-}
+.container {
+  width: 100%; }
 
-body {
-  font-family: 'Helvetica';
-  font-size: 16px;
-  line-height: 1.5;
-  height:100%;
-}
+/* Hero Image etc */
+.hero {
+  position: relative; }
+  .hero #hamburger {
+    display: none; }
+  .hero #banner {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: url("./img/header-2.jpg"); }
+    .hero #banner .inner {
+      padding-top: 18.8%;
+      /* height/width of image */
+      display: block;
+      height: 0; }
+  .hero .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; }
+    .hero .overlay .logo {
+      width: 5vw;
+      height: auto;
+      color: white; }
+    .hero .overlay h1 {
+      color: white;
+      font-family: expletus, serif;
+      font-size: 4vw;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+      margin: 10px 0; }
+    .hero .overlay h3 {
+      color: white;
+      font-size: 2vw;
+      margin: 5px 0; }
 
-.page-wrap {
-  max-width: 960px;
-  margin: 0 auto;
+#hamburger,
+#close-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: black;
+  z-index: 3; }
+
+#hamburger {
+  color: white; }
+
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100%;
-}
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, white 0, #b3b3b3 100%);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  box-shadow: 9px 0px 15px -4px rgba(0, 0, 0, 0.75); }
+  .sidenav ul {
+    list-style: none;
+    padding-left: 0px; }
+  .sidenav li a {
+    color: black;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s; }
+    .sidenav li a:hover {
+      letter-spacing: 2px;
+      font-weight: bold;
+      box-shadow: 9px 0px 15px -4px rgba(0, 0, 0, 0.75); }
+  .sidenav #social {
+    margin: 30px 20px;
+    display: flex;
+    justify-content: space-around; }
+    .sidenav #social a {
+      color: black; }
 
-h1 {
-  font-size: 2em;
-  text-transform: uppercase;
-  color: steelblue;
-}
+.sidenav-open {
+  width: 250px; }
 
+.move-right {
+  margin-left: 250px; }
+
+#main {
+  height: 100vh;
+  transition: margin-left .5s;
+  background: white;
+  color: black; }
+  #main .text-content {
+    margin: 10px 20px; }
+  #main h2 {
+    font-family: expletus, serif;
+    text-decoration: underline; }
+
+/*# sourceMappingURL=main.css.map */

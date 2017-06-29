@@ -1,21 +1,61 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-
-  <title>Nevada County Free Code Camp</title>
-
-  <link rel="stylesheet" href="main.css" />
- 
-
+    <meta charset="utf-8">
+    <title>Nevada County Free Code Camp</title>
+    <meta name="description" content="Homepage of Nevada County freeCodeCamp">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Expletus+Sans|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css" />
 </head>
 
 <body>
-
-<h1>Nevada County FreeCodeCamp</h1>
-<h2>Coding in the Sierra Foothills</h2>
-
-<p>Jeff was here</p>
-
+    <div id="hamburger" onclick="openNav()">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </div>
+    <div class="sidenav">
+        <ul>
+            <i id="close-btn" class="fa fa-times fa-2x" onclick="closeNav()"></i>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="meetings.html">Meetings</a></li>
+            <li><a href="talks.html">Talks</a></li>
+            <li><a href="members.html">Members</a></li>
+        </ul>
+        <div id="social">
+            <a href="https://www.facebook.com/groups/free.code.camp.nevada.county/"><i class="fa fa-facebook-square fa-3x"></i></a>
+            <a href="https://github.com/NevadaCountyFreeCodeCamp"><i class="fa fa-github fa-3x"></i></a>
+            <a href="https://www.meetup.com/Nevada-County-Free-Code-Camp/"><i class="fa fa-meetup fa-3x"></i></a>
+        </div>
+    </div>
+    <div id="main" class="container">
+        <div id="overlay">
+        </div>
+        <div class="hero">
+            <span id="banner" role="img">
+                <span class="inner">
+                </span>
+            </span>
+            <div class="overlay">
+                <img class="logo" src="img/FCCfire.svg" alt="freeCodeCamp logo">
+                <h1>freeCodeCamp Nevada County</h1>
+                <h3><i class="fa fa-code"></i> coding in the Sierra foothills <i class="fa fa-code"></i></h3>
+            </div>
+        </div>
+        <div class="text-content">
+            <h2>Lorem something</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h2>About the image</h2>
+            <p>The picture is of the Pelton Wheel from downtown Nevada City. The Pelton wheel was invented in Nevada County in the 1870s and achieved an efficiency of 90% vs the 40-something that were normal for that time.</p>
+            <a href="https://en.wikipedia.org/wiki/Pelton_wheel">https://en.wikipedia.org/wiki/Pelton_wheel</a>
+            <a href="https://en.wikipedia.org/wiki/Lester_Allan_Pelton">https://en.wikipedia.org/wiki/Lester_Allan_Pelton</a>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/ui.js"></script>
 </body>
+
 </html>
