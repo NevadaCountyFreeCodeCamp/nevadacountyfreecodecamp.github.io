@@ -2,10 +2,6 @@
   box-sizing: border-box;
   font-family: raleway, sans-serif; }
 
-body {
-  overflow:  hidden;
-}
-
 .container {
   width: 100%; }
 
@@ -24,10 +20,10 @@ body {
     background-size: 100%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-image: url("./img/header-2.jpg"); }
+    transition: 3s; }
     .hero #banner .inner {
-      padding-top: 18.8%;
-      /* height/width of image */
+      padding-top: 20%;
+      /* height/width of image, assumging 5:1 ratio */
       display: block;
       height: 0; }
   .hero .overlay {
@@ -50,11 +46,11 @@ body {
       font-family: expletus, serif;
       font-size: 4vw;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
-      margin: .5vw 0; }
+      margin: 10px 0; }
     .hero .overlay h3 {
       color: white;
       font-size: 2vw;
-      margin: .3vw 0; }
+      margin: 5px 0; }
 
 #hamburger,
 #close-btn {

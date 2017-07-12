@@ -30,10 +30,10 @@
         background-size: 100%;
         background-position: 50% 50%;
         background-repeat: no-repeat;
-        background-image: url('./img/header-2.jpg');
+        transition: 3s;
         .inner {
-            padding-top: 18.8%;
-            /* height/width of image */
+            padding-top: 20%;
+            /* height/width of image, assumging 5:1 ratio */
             display: block;
             height: 0;
         }
@@ -128,7 +128,7 @@
         justify-content: space-around;
         a {
             color: $navbar-link-color;
-        }    
+        }
     }
 }
 
@@ -152,8 +152,5 @@
     h2 {
         font-family: expletus, serif;
         text-decoration: underline;
-
     }
 }
-
-
