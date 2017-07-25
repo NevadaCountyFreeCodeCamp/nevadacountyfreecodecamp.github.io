@@ -1,5 +1,5 @@
 // Name of bg-images
-var bgImages = ['1.jpg', '2.jpg', '3.jpg'];
+var bgImages = ['yuba.jpg', '1.jpg', '2.jpg', '3.jpg'];
 // img-directory
 var baseURL = './img/';
 // Interval for background image change

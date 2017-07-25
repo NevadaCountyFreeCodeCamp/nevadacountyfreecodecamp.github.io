@@ -46,11 +46,11 @@
       font-family: expletus, serif;
       font-size: 4vw;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
-      margin: 10px 0; }
+      margin: .5vw 0; }
     .hero .overlay h3 {
       color: white;
       font-size: 2vw;
-      margin: 5px 0; }
+      margin: .3vw 0; }
 
 #hamburger,
 #close-btn {
