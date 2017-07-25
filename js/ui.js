@@ -1,9 +1,9 @@
 // Name of bg-images
-var bgImages = ['yuba.jpg', '1.jpg', '2.jpg', '3.jpg'];
+var bgImages = ['hero-1.jpg','hero-2.jpg','hero-3.jpg','hero-4.jpg','hero-5.jpg'];
 // img-directory
 var baseURL = './img/';
 // Interval for background image change
-var secs = 10;
+var secs = 15;
 
 
 function openNav() {
