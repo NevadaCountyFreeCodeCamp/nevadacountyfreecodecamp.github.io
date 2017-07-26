@@ -15,7 +15,7 @@
     position: relative;
     // idea for fully scaling background-img comes from
     // https://www.smashingmagazine.com/2013/07/simple-responsive-images-with-css-background-images/
-    // TODO: implement <img srcset> and create different sized images 
+    // TODO: implement <img srcset> and create different sized images
     // http://www.responsivebreakpoints.com/
     #hamburger {
         display: none;
@@ -30,10 +30,10 @@
         background-size: 100%;
         background-position: 50% 50%;
         background-repeat: no-repeat;
-        background-image: url('./img/header-2.jpg');
+        transition: 3s;
         .inner {
-            padding-top: 18.8%;
-            /* height/width of image */
+            padding-top: 20%;
+            /* height/width of image, assumging 5:1 ratio */
             display: block;
             height: 0;
         }
@@ -59,12 +59,12 @@
             font-family: expletus, serif;
             font-size: 4vw;
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
-            margin: 10px 0;
-        }
+            margin: .5vw 0;
+          }
         h3 {
             color: $hero-text;
             font-size: 2vw;
-            margin: 5px 0;
+            margin: .3vw 0;
         }
     }
 }
@@ -85,7 +85,7 @@
 }
 
 // Menu styling
-// 
+//
 .sidenav {
     display: flex;
     flex-direction: column;
@@ -128,7 +128,7 @@
         justify-content: space-around;
         a {
             color: $navbar-link-color;
-        }    
+        }
     }
 }
 
@@ -152,8 +152,5 @@
     h2 {
         font-family: expletus, serif;
         text-decoration: underline;
-
     }
 }
-
-
