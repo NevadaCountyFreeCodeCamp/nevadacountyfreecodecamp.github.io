@@ -9,6 +9,8 @@ Hey camper :camping:! Thanks for taking the time to contribute! :tada:
  
  ### Your First Code Contribution
 
-Unsure where to begin contributing? You can start by looking through the `help-wanted` issues:
+Unsure how to begin contributing? Check out [GitHub's On-Demand training](https://services.github.com/on-demand/).
+
+Want to make a contribution to this repo? You can start by looking through the `help-wanted` issues:
 
 * [Help wanted issues](https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22+user%3Anevadacountyfreecodecamp+sort%3Acomments-desc&type=) - issues which should be a bit more involved than `beginner` issues.
