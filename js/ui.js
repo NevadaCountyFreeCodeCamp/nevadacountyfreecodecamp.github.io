@@ -1,7 +1,12 @@
 // Name of bg-images
-var bgImages = ['hero-1.jpg','hero-2.jpg','hero-3.jpg','hero-4.jpg','hero-5.jpg'];
+var bgImages = ['hero-1.jpg', 'hero-2.jpg', 'hero-3.jpg', 'hero-4.jpg', 'hero-5.jpg'];
 // img-directory
 var baseURL = './img/';
+// Preloads the images so there is no flicker in the first 'round'
+bgImages.forEach(function(img) {
+  new Image().src = baseURL + img;
+// caches images, avoiding white flash between background replacements
+});
 // Interval for background image change
 var secs = 15;
 
