@@ -4,9 +4,13 @@ node_js:
   
 sudo: false
 
+addons:
+  apt:
+    packages:
+    - libcurl4-openssl-dev # required to avoid SSL errors
+
 before_install:
   - rvm install 2.3.3
-  - sudo update-ca-certificates
 
 install:
    - npm i -g eslint
